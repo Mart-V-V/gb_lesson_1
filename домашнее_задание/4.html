@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Homework</title>
+    <meta charset="UTF-8">
+    <title>Homework</title>
 </head>
+
 <body>
-<!--
+    <!--
 Необязательное задание.
 
 Необходимо от пользователя получить число.
@@ -25,10 +27,29 @@
 
 Уточнение: пользователь всегда вводит корректное положительное число.
 -->
-<script>
-  "use strict";
+    <script>
+        "use strict";
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
-</script>
+        const numberUser = prompt('Введите целое, положительное число.');
+
+        let numberHundred = Math.trunc(numberUser / 100) % 10;
+        let numberTen = Math.trunc(numberUser / 10) % 10;
+        let numberUnit = numberUser % 10;
+
+        //console.log(numberUser);
+
+        console.log('В числе ' + numberUser + ' количество сотен: ' + numberHundred + ', десятков: ' + numberTen + ', единиц: ' + numberUnit);
+
+        // с этим заданием вышла заморочка, сотни и единицы получил юез проблем, а вот с десятками были проблеммы, посмотрел Ваше решение и понял что делал не так.
+        // десятки получал по формуле
+        //console.log((numberUser / 100); - дальше нужно было делать обрезку до целого числа
+        // сотни получал по формуле
+        //console.log(numberUser % 100); - тут я понял что делаю что-то не то и пошел посмотреть в решебник
+        // единицы получал по формуле
+        //console.log(numberUser % 10);
+        // ну и дальше я понял что ошибался и не стал делать по своему.
+
+    </script>
 </body>
+
 </html>
