@@ -24,11 +24,12 @@
     <script>
         "use strict";
 
-        let degreeC = prompt('Введите температуру в Цельсиях.');
-        //console.log(degreeC);
-        let degreeF = (9 / 5) * degreeC + 32;
-        //console.log(degreeF);
-        alert('Цельсий: ' + degreeC + ', Фаренгейт: ' + degreeF);
+        const degreeC = prompt('Введите температуру в Цельсиях.');
+
+        const degreeF = (9 / 5) * degreeC + 32;
+
+        alert('Цельсий: ' + Math.round(degreeC) + ', Фаренгейт: ' + Math.round(degreeF));
+
 
     </script>
 </body>
