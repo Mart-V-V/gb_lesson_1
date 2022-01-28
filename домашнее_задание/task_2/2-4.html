@@ -40,7 +40,7 @@
         function addition(a, b) {
             return a + b;
         }
-        function difference(a, b) {/**/
+        /*function difference(a, b) {
             if (a > b) {
                 return a - b;
             } else if (a < b) {
@@ -48,6 +48,15 @@
             } else {
                 return 0;
             }
+        }*/
+        function difference(a, b) {
+            if (a > b) {
+                return a - b;
+            }
+            if (a < b) {
+                return b - a;
+            }
+            return 0;
         }
         function multiplication(a, b) {
             return a * b;
