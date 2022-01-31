@@ -15,7 +15,7 @@
 -->
     <script>
         "use strict";
-        let a, b;
+
         const products = [
             {
                 id: 3,
@@ -32,13 +32,10 @@
         ];
 
         products.forEach((element) => {
-            changePrice(element.price);
-            console.log(`${b}`);
+            element.price = element.price - element.price / 100 * 15;
         });
 
-        function changePrice(a) {
-            return b = (a - (a / 100 * 15));
-        }
+        console.log(products);
 
     </script>
 </body>
