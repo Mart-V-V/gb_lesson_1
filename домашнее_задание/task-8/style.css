@@ -75,8 +75,9 @@ body {
     line-height: 19px;
 }
 
+/* дополнил стиль для красивости */
 .cartIconWrap span.active {
-    display: inline-block; /* дополнил стиль для красивости */
+    display: inline-block;
 }
 
 .newArrivals {

@@ -1,3 +1,4 @@
+
 const basketCounterEl = document.querySelector('.cartIconWrap span');
 const basketTotalEl = document.querySelector('.basketTotal');
 const basketTotalValueEl = document.querySelector('.basketTotalValue');
